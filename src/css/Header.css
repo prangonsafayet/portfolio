@@ -1,0 +1,48 @@
+/* Header */
+.header-wrapper {
+  background-color: #ddd;
+  height: 91vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.main-info h1 {
+  font-weight: 700;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: rgb(19, 50, 150);
+  display: block;
+}
+
+/* Particle JS */
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 91vh;
+  width: 100vw;
+  z-index: 1;
+  height: 90% !important;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem;
+  }
+  .typed-text {
+    font-size: 1.3rem;
+  }
+}

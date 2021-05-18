@@ -1,0 +1,17 @@
+.aboutMe {
+  background-color: #ddd;
+}
+.aboutMe h1 {
+  text-transform: uppercase;
+  color: #000;
+}
+.aboutMeLinks {
+  color: #000;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.aboutMeLinks:hover {
+  color: rgb(19, 50, 150);
+  text-decoration: none;
+  transition: 0.4s;
+}

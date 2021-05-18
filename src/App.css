@@ -2,82 +2,6 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-/*******Navbar************/
-nav {
-  z-index: 3;
-}
-.logo {
-  width: 100%;
-}
-.custom-bg-nav {
-  background-color: #131111;
-}
-/* Menu Links */
-nav .navbar-nav .nav-item a.nav-link {
-  /* font-weight: 500; */
-  letter-spacing: 0.0375rem;
-  cursor: pointer;
-  transition: 0.4s;
-  margin-right: 0.75rem;
-  font-size: 0.8rem;
-  border-top: 0.1875rem solid #131111;
-  opacity: 0.75;
-  color: #fff;
-}
-
-nav .navbar-nav .nav-item a.nav-link:hover {
-  transition: 0.4s;
-  color: #fff;
-  border-top: 0.1875rem solid rgb(19, 50, 150);
-  opacity: 1;
-}
-
-nav ul li {
-  text-transform: uppercase;
-}
-
-.navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
-}
-
-nav .navbar-nav .nav-item a.nav-link.active,
-nav .navbar-nav .nav-item a.nav-link.active:focus {
-  border-top: 0.1875rem solid rgb(19, 50, 150);
-  transition: none;
-  opacity: 1;
-}
-
-/* Header */
-.header-wrapper {
-  background-color: #ddd;
-  height: 91vh;
-}
-
-.main-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 2;
-}
-
-.main-info h1 {
-  font-weight: 700;
-}
-
-.typed-text {
-  font-size: 2rem;
-  color: rgb(19, 50, 150);
-  display: block;
-  margin-bottom: 2.5rem;
-}
-
 .btn-main-offer {
   border: 1px solid rgb(19, 50, 150);
   text-decoration: none;
@@ -95,26 +19,18 @@ nav .navbar-nav .nav-item a.nav-link.active:focus {
   color: #fff;
   transition: 0.4s;
 }
-
-/* Particle JS */
-
-.tsparticles-canvas-el {
+body {
+  background-color: #ddd !important;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   position: absolute;
   height: 91vh;
-  width: 100vw;
-  z-index: 1;
-  height: 90% !important;
-}
-
-/* responsive */
-@media (max-width: 768px) {
-  .navbar-brand {
-    width: 7rem;
-  }
-  .main-info h1 {
-    font-size: 1.7rem;
-  }
-  .typed-text {
-    font-size: 1.3rem;
-  }
 }

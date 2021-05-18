@@ -1,0 +1,51 @@
+/*******Navbar************/
+nav {
+  z-index: 3;
+}
+.logo {
+  width: 100%;
+}
+.custom-bg-nav {
+  background-color: #131111;
+}
+/* Menu Links */
+nav .navbar-nav .nav-item a.nav-link {
+  /* font-weight: 500; */
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-right: 0.75rem;
+  font-size: 0.8rem;
+  border-top: 0.1875rem solid #131111;
+  opacity: 0.75;
+  color: #fff;
+}
+
+nav .navbar-nav .nav-item a.nav-link:hover {
+  transition: 0.4s;
+  color: #fff;
+  border-top: 0.1875rem solid rgb(19, 50, 150);
+  opacity: 1;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+}
+
+nav .navbar-nav .nav-item a.nav-link.active,
+nav .navbar-nav .nav-item a.nav-link.active:focus {
+  border-top: 0.1875rem solid rgb(19, 50, 150);
+  transition: none;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}

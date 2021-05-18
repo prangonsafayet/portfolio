@@ -1,38 +1,11 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-import Particles from "react-particles-js"
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
+import Routing from "./components/Routing";
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-        <Particles
-        className="particles-canvas"
-          params={{
-            particles:{
-              number:{
-                value:30,
-                density:{
-                  enable:true,
-                  value_area: 700
-                }
-              },
-              "color": {
-                "value": "#133296"
-              },
-              shape: {
-                type: "circle",
-                stroke:{
-                  width:6,
-                  color: "#133296"
-                }
-              }
-            }
-          }}>
-        </Particles>
-        
-        <Header></Header>
+        <Navbar></Navbar>
+        <Routing></Routing>
     </div>
   );
 }
