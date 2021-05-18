@@ -1,10 +1,11 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
+import Routing from "./components/Routing";
 function App() {
   return (
     <div className="App">
         <Navbar></Navbar>
+        <Routing></Routing>
     </div>
   );
 }

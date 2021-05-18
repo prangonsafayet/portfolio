@@ -1,0 +1,10 @@
+.Portfolio iframe {
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+}
+.Portfolio {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
