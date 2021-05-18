@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../logo.png";
 import "../css/Navbar.css";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -28,25 +29,25 @@ export const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto text-center text-lg-left">
-            <li className="nav-item active">
-              <a className="nav-link" href="/">
-                Home <span className="sr-only">(current)</span>
-              </a>
+            <li className="nav-item">
+              <NavLink to="/" exact>
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/aboutme">
-                About Me
-              </a>
+              <NavLink to="/aboutme" exact>
+                About me
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/portfolio">
-                Portfolio
-              </a>
+              <NavLink to="/portfolio" exact>
+                portfolio
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">
+              <NavLink to="/contact" exact>
                 Contact Me
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

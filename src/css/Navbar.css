@@ -9,7 +9,7 @@ nav {
   background-color: #131111;
 }
 /* Menu Links */
-nav .navbar-nav .nav-item a.nav-link {
+nav .navbar-nav .nav-item a {
   /* font-weight: 500; */
   letter-spacing: 0.0375rem;
   cursor: pointer;
@@ -19,9 +19,18 @@ nav .navbar-nav .nav-item a.nav-link {
   border-top: 0.1875rem solid #131111;
   opacity: 0.75;
   color: #fff;
+  text-decoration: none;
+  padding: 0.3125rem;
 }
 
-nav .navbar-nav .nav-item a.nav-link:hover {
+nav .navbar-nav .nav-item a:hover {
+  transition: 0.4s;
+  color: #fff;
+  border-top: 0.1875rem solid rgb(19, 50, 150);
+  opacity: 1;
+}
+
+nav .navbar-nav .nav-item a.active {
   transition: 0.4s;
   color: #fff;
   border-top: 0.1875rem solid rgb(19, 50, 150);
